@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - SDG Goal 16</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .custom-nav {
+        background-color: rgba(13, 0, 0, 0.9);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+      .card strong {
+        font-size: 1.2rem;
+      }
+      .card-body ul li {
+        margin-bottom: 15px;
+      }
+      .card-body ul li a {
+        transition: color 0.3s;
+      }
+      .card-body ul li a:hover {
+        color: #007bff;
+      }
+      .toggle-text {
+        display: none;
+        margin-top: 0.5rem;
+        transition: all 0.3s ease-in-out;
+      }
+      .footer {
+        background-color: #333c44;
+        color: white;
+        padding: 15px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg custom-nav">
+      <div class="container-fluid">
+        <a href="GOAL16.html" class="navbar-brand">
+          <img
+            src="logo.png"
+            alt=""
+            class="rounded"
+            style="width: 200px; height: 120px"
+          />
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler bg-light"
+          data-bs-toggle="collapse"
+          data-bs-target="#blog-navbar"
+          aria-controls="blog-navbar"
+          aria-expanded="false"
+          aria-label="Toggle Navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="blog-navbar"
+        >
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link text-light fs-1 text-center">
+                <strong>SUSTAINABLE DEVELOPMENT GOAL-16</strong>
+              </a>
+            </li>
+          </ul>
+          <form class="d-flex me-3" role="search">
+            <div class="input-group">
+              <input
+                type="search"
+                class="form-control"
+                placeholder="Search for.."
+              />
+              <button type="submit" class="btn btn-dark">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </form>
+          <a href="contact.html" class="nav-link text-light fs-5"
+            ><strong>CONTACT US</strong></a
+          >
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-5 pt-5">
+      <div class="col-md-8 mx-auto">
+        <div class="card shadow-sm mb-4 p-3">
+          <h3 class="text-center text-primary">
+            16.3 promote the rule of law at the national and international
+            levels, and ensure equal access to justice for all
+            <br />
+            <img
+              src="data:image/png;base64,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"
+              alt=""
+            />
+          </h3>
+          <div class="card-body">
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="#"
+                  onclick="toggleInfo('indicator39')"
+                  class="btn btn-dark text-light w-100 text-start"
+                  style="border-radius: 5px; padding: 10px; margin-bottom: 5px"
+                >
+                  <strong>39.</strong>Percentage of referred cases of sexual and
+                  gender-based violence against women and children that are
+                  investigated and sentenced
+                </a>
+
+                <p id="indicator39" class="toggle-text">
+                  Sexual and gender-based violence remains widespread, and too
+                  often ends in impunity. This indicator, recommended as a
+                  measure under UNSCR 1325 on women and peace and security,
+                  assesses how the police and justice system process and manage
+                  violence against women and children. The three stages –
+                  monitoring, investigating, and sentencing – are all important
+                  and interrelated. Monitoring suggests confidence in the
+                  system, investigation shows commitment by the police/legal
+                  establishment, and sentencing shows justice being achieved.
+                </p>
+                <img
+                  src="https://saferdevon.co.uk/safetypartner/uploads/2023/12/IG-BVA-chart.png"
+                  width="650"
+                  height="500"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function toggleInfo(id) {
+        var element = document.getElementById(id);
+        element.style.display =
+          element.style.display === "none" ? "block" : "none";
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

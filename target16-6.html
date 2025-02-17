@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - SDG Goal 16</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .custom-nav {
+        background-color: rgba(13, 0, 0, 0.9);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+      .card strong {
+        font-size: 1.2rem;
+      }
+      .card-body ul li {
+        margin-bottom: 15px;
+      }
+      .card-body ul li a {
+        transition: color 0.3s;
+      }
+      .card-body ul li a:hover {
+        color: #007bff;
+      }
+      .toggle-text {
+        display: none;
+        margin-top: 0.5rem;
+        transition: all 0.3s ease-in-out;
+      }
+      .footer {
+        background-color: #333c44;
+        color: white;
+        padding: 15px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg custom-nav">
+      <div class="container-fluid">
+        <a href="GOAL16.html" class="navbar-brand">
+          <img
+            src="logo.png"
+            alt=""
+            class="rounded"
+            style="width: 200px; height: 120px"
+          />
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler bg-light"
+          data-bs-toggle="collapse"
+          data-bs-target="#blog-navbar"
+          aria-controls="blog-navbar"
+          aria-expanded="false"
+          aria-label="Toggle Navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="blog-navbar"
+        >
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link text-light fs-1 text-center">
+                <strong>SUSTAINABLE DEVELOPMENT GOAL-16</strong>
+              </a>
+            </li>
+          </ul>
+          <form class="d-flex me-3" role="search">
+            <div class="input-group">
+              <input
+                type="search"
+                class="form-control"
+                placeholder="Search for.."
+              />
+              <button type="submit" class="btn btn-dark">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </form>
+          <a href="contact.html" class="nav-link text-light fs-5"
+            ><strong>CONTACT US</strong></a
+          >
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-5 pt-5">
+      <div class="col-md-8 mx-auto">
+        <div class="card shadow-sm mb-4 p-3">
+          <h3 class="text-center text-primary">
+            16.6 develop effective, accountable and transparent institutions at
+            all levels
+            <br />
+            <img
+              src="data:image/png;base64,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"
+              alt=""
+            />
+          </h3>
+          <div class="card-body">
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="#"
+                  onclick="toggleInfo('indicator91')"
+                  class="btn btn-dark text-light w-100 text-start"
+                  style="border-radius: 5px; padding: 10px; margin-bottom: 5px"
+                >
+                  <strong>91.</strong>Revenues, expenditures, and financing of
+                  all central government entities are presented on a gross basis
+                  in public budget documentation and authorized by the
+                  legislatur
+                </a>
+
+                <p id="indicator91" class="toggle-text">
+                  This indicator, based on Pillars II and IV of the IMF Fiscal
+                  Transparency Code, measures the timely publication of
+                  revenues, expenditures, and financing of all central
+                  government entities, and that this data is presented on a
+                  gross basis in public budget documentation and authorized by
+                  the legislature. Revenues include taxes, royalties, dividends,
+                  bonuses, license fees, payments for infrastructure
+                  improvements, payments in kind, or any other significant
+                  payment and material benefit.
+                </p>
+                <img
+                  src="https://www.morungexpress.com/sites/default/files/inline-images/t2_0.jpg"
+                  alt=""
+                />
+              </li>
+              <li>
+                <a
+                  href="#"
+                  onclick="toggleInfo('indicator94')"
+                  class="btn btn-dark text-light w-100 text-start"
+                  style="border-radius: 5px; padding: 10px; margin-bottom: 5px"
+                >
+                  <strong>94.</strong>Perception of public sector corruption
+                </a>
+
+                <p id="indicator94" class="toggle-text">
+                  Public sector corruption is a barrier to development and
+                  diverts resources away from poverty-eradication efforts and
+                  sustainable development. Corruption is difficult to measure
+                  since objective data tends to be highly incomplete and
+                  difficult to compare. Transparency International is a global
+                  civil society organization that works to fight corruption and
+                  has developed the Corruption Perceptions Index (CPI). The CPI
+                  ranks countries based on how corrupt their public sector
+                  (administrative and political) is perceived to be. It is a
+                  composite perception-based index drawing on corruption-related
+                  data collected by a variety of reputable institutions. The CPI
+                  reflects the views of observers from around the world,
+                  including experts living and working in the countries and
+                  territories evaluated. Transparency International publishes
+                  annual reports covering 177 countries with some 20 years of
+                  historic data.
+                </p>
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnOkno1NENtXn8mr89C9cIId52MJuVeq3uvw&s"
+                  width="400"
+                  height="300"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function toggleInfo(id) {
+        var element = document.getElementById(id);
+        element.style.display =
+          element.style.display === "none" ? "block" : "none";
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - SDG Goal 16</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .custom-nav {
+        background-color: rgba(13, 0, 0, 0.9);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+      .card strong {
+        font-size: 1.2rem;
+      }
+      .card-body ul li {
+        margin-bottom: 15px;
+      }
+      .card-body ul li a {
+        transition: color 0.3s;
+      }
+      .card-body ul li a:hover {
+        color: #007bff;
+      }
+      .toggle-text {
+        display: none;
+        margin-top: 0.5rem;
+        transition: all 0.3s ease-in-out;
+      }
+      .footer {
+        background-color: #333c44;
+        color: white;
+        padding: 15px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg custom-nav">
+      <div class="container-fluid">
+        <a href="GOAL16.html" class="navbar-brand">
+          <img
+            src="logo.png"
+            alt=""
+            class="rounded"
+            style="width: 200px; height: 120px"
+          />
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler bg-light"
+          data-bs-toggle="collapse"
+          data-bs-target="#blog-navbar"
+          aria-controls="blog-navbar"
+          aria-expanded="false"
+          aria-label="Toggle Navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="blog-navbar"
+        >
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link text-light fs-1 text-center">
+                <strong>SUSTAINABLE DEVELOPMENT GOAL-16</strong>
+              </a>
+            </li>
+          </ul>
+          <form class="d-flex me-3" role="search">
+            <div class="input-group">
+              <input
+                type="search"
+                class="form-control"
+                placeholder="Search for.."
+              />
+              <button type="submit" class="btn btn-dark">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </form>
+          <a href="contact.html" class="nav-link text-light fs-5"
+            ><strong>CONTACT US</strong></a
+          >
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-5 pt-5">
+      <div class="col-md-8 mx-auto">
+        <div class="card shadow-sm mb-4 p-3">
+          <h3 class="text-center text-primary">
+            16.9 by 2030 provide legal identity for all including free birth
+            registrations
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAAk1BMVEUrZpksZpn///8mZJhKeaUiYZbC0N9xl7kTXJMdX5Xf6O+DpMEKWZGTrMWlvdEkY5fm7fNbgqrG1eGYsspRfaeguM+LqcXt8vdbia/z9/qyxthBdqTQ3OfX4eoAToy4y9sAVI84bZ1nj7OwwNN4m7uCnbtkjbKowdaRqcOGo79GfKhEc6GxytsASYpwmbu80eEAP4VvxuPEAAAR4ElEQVR4nO2dC2OqOtO2ITFAEAmEM4SFIGqt+9l+///XfRPUekKU9dIu3Yu7LVUOkbk6M0wgUAWNelrKn96Bd9IIq4ckrKk+6qGmB1hbSkY9EN0eYE2wMuqB8GSE9bRGWD00wuqhEVYPjbB6aITVQ22wDCmiEMOAeTA1KPxmhmXQwzLcTNlXG3KBXE4OMwi8Ztef9DpSVZURrGKonDC8ht/wrRKMwWYiZzCmMCxnMswO80CtsLJU0zS+NCpeTDCecU0LfEziwhRTo4R3Wpppco34wINNtNRgFTe1ak+LrbjJddK6o68gVSWrumTZJqwUYKZWdbbUSaX4y7JeKiouKzeLJ8usXrq+W5fLmtyFhf1IdoHs+RqhmhBNvjFVlsjfvixhUeQ3naT6iEOgaN7Mikr5ljUNJPHL+pZKqgRNSgf20qMqnuRamutZ4u80zwklErPQ/0l36VoENt/NnOl9WAomSyQgtnLZFinQLIuQP0Xil4fsEjklw5h6qDAOqxsFQs6vAKX/E0iXgGiI+HyBbPpnUDwWzuAvny2QpiNkACzxUYiyTpbcrZwVxGOWAyw7zWr7Y71za2eC78NSGlhMki8MCcsykRugtVWjQsLCWLmAlXOAlaLZPIgaZ5ML52crvJzgrwmwONJ/mQiibmIKz8wWu4D7n2ABm/wLsIoJ39Tr2Xo3iaOYPYJF3CRHjnUGy5h8rLbIUahyAYvUqwZWaGRMwdSiLw+LTGungTWPdQkrpxVXBOe7cJ1nWVnzvAiLXcglLO6t8/KhZ8HEi5D0LFtP0NZGawIZKUNJEJYXsBRaNbAEQgJjCFVrhjQIy9eFpcqoAVipY0LuVkrP8IsgzMJaxKnt+WUxdYtKF5Wvr6oZd4s1fQTLCJCeI58WMnOnho3s2nGCUqbxyUXOUsgeVhQkqJaxy3SULKJXhoX3sBITJRSrCoGAIJRRKBUoLTG8YM35Krb/orSjdNjDsjjKUrSB9J2j/JeEtTJlzor0WG2F5cGPbQRJapQFSsQrw1L2sKa/HPQJIaaU8KWUJWFlWWZbeCG/Fawc4k99CGueoNUaFRbkLFgIsNbWFKUywZPLnHWENYNaY2HgLczJ/PKVc9YRVj030SdTiZ5n+cYzRe0L7jmBELXg/4pwmptNAfsELNLUUoIVaMORZ4FnzY+w8B1YNlpQBergOgpfOsEfw1Dfw6JB5EZFIKaLOI8nwueezT0PpXZRZ8/BYjESUy9xsgJ9LFFONsBv0cByJy05S8KhAuqy/eZaqaHgZeusvWdpKGQRyrBK+T/LXSJhGYG2Fa5p6gArMYPdeoKfgkU85M2hTfdQlEJmjxKZs1CSmBYNLmE1FbyDEl8WpbKCj1Cyetn+DsACSjVKHGSCFWUeBes8EOHC9UQlXM4r4QUiD4rCfQyLrTSPfHCwNuBxyHUjgB+di6X9UcpeYUpZzcMvx2EuzCGVJrRqP4/Ep9evKICV8q3h5WbhM6izbN0Op6HYxZMd99f+elYXu1Xg/bvbPeFZYD9U6QxmYHgBlSb0whXIVETOBeFmjYvVm+Xs66wDO71+QYHdGEwhasnYHoKclCqDoyHAU+UqMMWlqjwDq024zwmvlz451hiunqaybmAZ1AtQQux/ypJmrJS9SPJ7sP47Ui8E3Z1Fuk5NjUe2HQkt5AHy8hS+oLNjzuh3wlJfUp2wRODY/wSr2t7MvOViyrf8U4h4x/OAT89S/AirgTVzxKdZ1YvQCzYAK9vDSpPCN1121sYIC2B5QV6E4gDL45n4zEXN01TbBSk5a2OEpWTraWWHZliFej3VocbarrP1kk+DCiDWI6zLZZQSSgx54kGeazAohi/4BTOowc7bGGH1aGOE1aONEVaroIBn1/NGWPdWJ8rqJreNsNqEjTzmCb2aO8JqBIe9ix7zNsy9qUuu1hphSZGpPS2NEy4So9jT7P8YLNycCnlmzc5dbAYsFMcTDAqdlGGoh6vrDP/WsBglapZBDN0ct27VvYuGLcdzxE2SYkoQ8UqPptcp651hYcO1TXlNJbcn9OGndu8ixJ0cylIZhNFSSHAlvQ7Cd4bF1DQ53vOQ2Cp+sHr3LuJy35bt+rWDkFPXZYsdbwuLZAKdSdyWkNeGdsLC/Ly12KrKFvrvCgs3g6vOlLdZd2Fo5y4242q+HNVqN+NNYSmkQFdKje4tundRDsj7UmTda+NnYDUXhZ7Q0T3kSNaOwCKra1ZIXlr+fVgqK9PoRWAppfuc/MNIKFIXaXzfespvYRU3h/o+sFRm2V8J8M/CotNb41pl7vezSSFJdXv03gtnUcum266s1b2LmFDjlLWCO9hfExbOmvQt7qUhordt2+GJD2Apk6o++aqzxVJvA2vSeE5+JxxUsmnb9q4jPoSlZrOvmg0cmjaw8C3T14Tld8OirbD03/Ys6A762h5Xok0o5iDh3bB/UVgTMwHdD8O6bdvV73sW5He8rYqdWW0xU0mq7Xa8/gOw5D0dfWEp6vmhscUyvyXBR5PfTPDEIPLqDp1PKzGnhBEriBwnumX/7bCwO/tYsb5HQ2xJ3S0zFZrfbspJVz18fxeJvtO9j4/NZpnaZrxaxXrdFKh/wLPoDLqntHcYCjMXeXq3ciIt7eldUdgBi86if5oGZORH0qf22etdYDG/2d97xaHc7RvXuns0eASLxYEL/uT6n1lWltDVKD+1/xQslbjJ5YaO333aoWMXMaQpIrtaTbkAP0Zo5rn5B3LWN8FSaX1BC4qjTlZ9ru4oTIDyP1A6/F9g8a4TCTQzT5uJrDNh9YOlkkWapsXbhKH7GJZKyqnZrJaYdfmIVb/rhrS5T7eljbeFJU/j+PXso/40Hp+Cf4+xDt8Fa999I1QODMJ3Or4jrP1uE5JdiXVH4t8LS6HT5HrLRKdPd3d+W28ISzE+2raddqWuYWx7P1gKXbZvXHfQGsa2t4OFZZPt6vCtYWx7YVi7Nli4/czfgZZxj9Ywtr0mLHQPlmKEXdvfjcRhbHsvWIpxNwb32tyhNYxtbwVLMR42dMe3hrHtB2GJadgh7zEsbHiPebf71jC2/SCs9bzjqZbG9gZWcQUL08589UWrLcsPY9sPwuocu9HsRyesh/nqqLqllh/GtreBpTwTg3uFt5E4jG0/Gob0vh6FIT7ldk1rZ6R9XYJfGte+NYxtPwgr94IOrc9grW5gneV226raYVVGete3hrHtFUuHw/Crs7A96+MUrH1ciLwYxr58K7zK8sPY9h6wTrk9xfg+LKx8Rejy0reGse0HYSVml5wOWEZwZKDBke4+LJUoX741o28NKzXwfbGzo+E1LOIeCXD5VIoOWCo7DQ6NyTvDWv82rKO7aE0F1QULaB0jsXhrWE/XWaS6gIWP3iL2Tzsh/3bAAlqHS/va+XC0YWz7Sc+yMGOYtU9IdheWSvdjY3m5v5aH/fbi4zBEiZV7thdDQ4ex7QdhFZnfoeo+LAXLq8+CHCtN3FrWfi3e0xJXT1UbQj9ZOkRdSu7DUnG5sTcP7qE4EyvD69WHse0l66w9rPUpxyngOaeW71A7e2oM+NlfU5TewLqEorTS6rwqPYxtPwjL0brEn4VFY6G0XH4mGffvX5UexrYfPRp23LXTcjRshyXHseW3Q4zIxESOe3eU1jC2/Wid1bHZRVG6rzrtNtNJM1I5v76/kDF5wIzujj0axraXLEr3sNruoaHxfpRDXl7QIoehbdG9SBzGtp8Nw/3zitsmdPuMZ5HJcUQIPy8NWHkckOt8ttMaxrYfhLXz4w7pZ7D2fcPZDSx6dreAsL5osbPBy1H7iMlhbHvF0gGXMqgS93qk4uUY5S/fwuX5/dJOayQOY9srwlKpPHNgXtdNZHJ5F4q2v/EV04t7yyHLt4zyHsa2l4TV1A7B9WXD7dVN5Gg/+poG1420dIyGse0lYWH5yPDrKLyBwlVlz+H6dovbZPdfhqVaAjnXz6GwrpiIY7idjoXHJbd3Gwxj22vCgs3S6zxtmRerXhwNxdWivwoWWSXL61gyLp7lINrrrEYtBdowtr0mLFXJb54Gc/Ewh6vnqZDz6uG25ngrWKQS/CmdrlHc3j6oUPsE5PrGJlqdlnktt2kOY9uPwFKJ8ZxOCNpqJXwa5CDwxQrncVjcDHR4K1jP/OePZ84ZK6fBDNc565T87TZWbwSLlY+lPnOTCFZOtPhpNAM+XYdG6e3zGN4KVuI8VlQ851uWdobl2DdUzmbeGdw9jG0/AOspiadgQd46+Va6T+QKPbGy2/3qvwYrfw6Witmp3Gp6j8pZN6h475sGWOw9p/rZG9sU6+RbgfxPXGdvW3P7+8BSWcfQyIvryU/fBaicZfklJacRzAv25jc6fYcU6ysSc0v9KrAWd2Pwb4alKmRxABTNv56UGHT41d8MS8XHByRy63jC4V7NMMI6ZvkkJocLsh25/a+HBcaHUSLkI1Cgk5444b36aoTVWE8NYjRnJojBDPKoSBvGtneFpZ4NMXqinB3GtjeG1UfD2DbC6qERVg+NsHpohNVDI6weGmH10Airh0ZYPfQ3/rff39YIq4dGWD00wuqhEVYPjbB6aITVQyOsHhph9dAIq4e+AZYc5scUOY5PwcQyGIN3lBKDUZiFDwsoxYRig8B3c8VBkf9R3TDIfh3YjMiGYCJ/4BVTcLMhrHRYgpsl+LxZ2Q40Jj/faJqj1FDkxw+k4WGRJeepq2hcmxIlNLnvCpd8LGLhepwH21Lj3KaKHeDZIhM60VazwtUqI0xXnIvllPN1RmozrxiZcp2UsIpCKs1lCtdEYIW5WBGmi5pkxQaI+U2z68ziGl98ikrR3AJertJgCb+CsChdbTUUreFh0QDxJCqRmSO9RlrkrNDMEHmFKo4KJBTkaAFV8pxpzifiFlpqKEPBPBc6Epqewjo8RjxPSoujhZGhkCj0A1VEQabmwRIzKo0CaZafLMDRVrJZDeVz5BR2jDSKlmsHaX4idIFML0TVDJVDmfYdsBI/QJ/IdpPZGv0KUexozLGlVc68QCWyLfhLS1jmJ0pKtNwhKykMZ1GhmBop+l9u1iir0HaeIM7OYXmWYSeTTeIaJjLJCZappNBOatEY2ks28xSV80TMXRQCa4/n1kCWfSOswE+8FP2aIl+IEunSsxwrBS+y5/gLFqoTgDXPzTL6AFgGwPp/ublCablSGTId9QLW3Fgkk8mmzBwnys5hLSSsufw/tHWysfawrBiF1AL/ntGBLPseWJkNsESBqgZWljq6dJUDrMTZTdgBVuJoDawAxYmro7wAr5glnAQQT3SVeCgrz8OQAxW3rtRV5CXV5ApWxLNYtncOi9CZvIdgIMu+J2flyFGSBMKmkLAmdRIkqv7lWeb6BMtLmjBcIg9hHfE1wEJmSWDDheFBtqvOYeUpXiQrFPkb5KOP7AqWU2xX8EFoeQ6LuSgvBzLsm2BpwQTCArJ2A8sHPoLorWG4Qg0sFyJurqPYgjBME+xqioZKburIK2/CcJb4NopReg0LwnCVyPbOYeGtw58Zhv+cvidnGaxEAU9gt/8HnjWXw6caWL+aBD8nEhaVsHxNwjIyB/KzhAVbVGijIwXe5IkjD55TCwOs2MIAywqS7UcyEchBJsCakz0stodlrBKfX8HKXh0WchkGJnDY3qDUhBrAhOJBwkpSlEPqST1CNfAgDWB5DSwlhyOXjrQUshyJNEjwArJYkAknQyJ1ARa3PyEMP2CdPJlA/od6IzHTikpYSZGYUDqkUFhMghMsKFkAVvTSsMhG87FS8k2mfTDPhBqSetylce4GQhRZqQkB8aPwXCs/+STjladBHhawhhBiE4p5oJUfeV5DuWl8aJ9C5DHVheBwUBX2PM299DOvjDr/LEReU79pVsssWJr6WjbhlTHjUInZhi/r2W0RDHYw/O6+ISkViDmsyMZhiqFfAlP5hpRs/4l4v/z41bwD++Rm+zWPazUbEoUopwabJVg2Kxs/X/W4dFB9Byx8mODzN8oXJozP18RfS/dL8IW1+EgM47MNL5acN3u98cAazzr00Airh0ZYPTTC6qERVg+NsHpohNVDI6weGmH10Airh75gba0nH1TxF8vaHmDxzkeujmrED7BGPakRVg+NsHro/wMJCPgHibk0XQAAAABJRU5ErkJggg=="
+              alt=""
+            />
+          </h3>
+          <div class="card-body">
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="#"
+                  onclick="toggleInfo('indicator92')"
+                  class="btn btn-dark text-light w-100 text-start"
+                  style="border-radius: 5px; padding: 10px; margin-bottom: 5px"
+                >
+                  <strong>92.</strong>Percentage of children under age 5 whose
+                  birth is registered with a civil authority
+                </a>
+                <p id="indicator92" class="toggle-text">
+                  In many developing countries, the births of a substantial
+                  share of children are unregistered. Registering births is
+                  important for ensuring the fulfillment of human rights. Free
+                  birth registration is the key starting point for the
+                  recognition and protection of every person’s right to identity
+                  and existence. Failure to register births either due to
+                  insufficient administrative systems, discrimination, or
+                  isolation is a key cause of social exclusion. By ensuring
+                  registration of all births, countries will increase their
+                  population’s opportunities to access services and
+                  opportunities and their ability to track health statistics
+                  (infant mortality rates, vaccination coverage, etc.).
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function toggleInfo(id) {
+        var element = document.getElementById(id);
+        element.style.display =
+          element.style.display === "none" ? "block" : "none";
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

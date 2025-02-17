@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - SDG Goal 16</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .custom-nav {
+        background-color: rgba(13, 0, 0, 0.9);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+      .card strong {
+        font-size: 1.2rem;
+      }
+      .card-body ul li {
+        margin-bottom: 15px;
+      }
+      .card-body ul li a {
+        transition: color 0.3s;
+      }
+      .card-body ul li a:hover {
+        color: #007bff;
+      }
+      .toggle-text {
+        display: none;
+        margin-top: 0.5rem;
+        transition: all 0.3s ease-in-out;
+      }
+      .footer {
+        background-color: #333c44;
+        color: white;
+        padding: 15px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg custom-nav">
+      <div class="container-fluid">
+        <a href="GOAL16.html" class="navbar-brand">
+          <img
+            src="logo.png"
+            alt=""
+            class="rounded"
+            style="width: 200px; height: 120px"
+          />
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler bg-light"
+          data-bs-toggle="collapse"
+          data-bs-target="#blog-navbar"
+          aria-controls="blog-navbar"
+          aria-expanded="false"
+          aria-label="Toggle Navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="blog-navbar"
+        >
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link text-light fs-1 text-center">
+                <strong>SUSTAINABLE DEVELOPMENT GOAL-16</strong>
+              </a>
+            </li>
+          </ul>
+          <form class="d-flex me-3" role="search">
+            <div class="input-group">
+              <input
+                type="search"
+                class="form-control"
+                placeholder="Search for.."
+              />
+              <button type="submit" class="btn btn-dark">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </form>
+          <a href="contact.html" class="nav-link text-light fs-5"
+            ><strong>CONTACT US</strong></a
+          >
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-5 pt-5">
+      <div class="col-md-8 mx-auto">
+        <div class="card shadow-sm mb-4 p-3">
+          <h3 class="text-center text-primary">
+            16.8 broaden and strengthen the participation of developing
+            countries in the institutions of global governance
+            <br />
+            <img
+              src="data:image/png;base64,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"
+              alt=""
+            />
+          </h3>
+          <div class="card-body">
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="#"
+                  onclick="toggleInfo('indicator98')"
+                  class="btn btn-dark text-light w-100 text-start"
+                  style="border-radius: 5px; padding: 10px; margin-bottom: 5px"
+                >
+                  <strong>98.</strong> Annual report by Bank for International
+                  Settlements (BIS), International Accounting Standards Board
+                  (IASB), International Financial Reporting Standards (IFRS),
+                  International Monetary Fund (IMF), World Intellectual Property
+                  Organization (WIPO), and World Trade Organization (WTO) [other
+                  organizations to be added] on the relationship between
+                  international rules and the SDGs and the implementation of
+                  relevant SDG targets
+                </a>
+                <p id="indicator98" class="toggle-text">
+                  This indicator will track whether key international
+                  institutions deliver an official annual report assessing
+                  whether international rules are consistent with achieving the
+                  SDG. The reports should also outline options for improvement
+                  to make the rules consistent with achieving the goals.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function toggleInfo(id) {
+        var element = document.getElementById(id);
+        element.style.display =
+          element.style.display === "none" ? "block" : "none";
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

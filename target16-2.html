@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - SDG Goal 16</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .custom-nav {
+        background-color: rgba(13, 0, 0, 0.9);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+      .card strong {
+        font-size: 1.2rem;
+      }
+      .card-body ul li {
+        margin-bottom: 15px;
+      }
+      .card-body ul li a {
+        transition: color 0.3s;
+      }
+      .card-body ul li a:hover {
+        color: #007bff;
+      }
+      .toggle-text {
+        display: none;
+        margin-top: 0.5rem;
+        transition: all 0.3s ease-in-out;
+      }
+      .footer {
+        background-color: #333c44;
+        color: white;
+        padding: 15px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg custom-nav">
+      <div class="container-fluid">
+        <a href="GOAL16.html" class="navbar-brand">
+          <img
+            src="logo.png"
+            alt=""
+            class="rounded"
+            style="width: 200px; height: 120px"
+          />
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler bg-light"
+          data-bs-toggle="collapse"
+          data-bs-target="#blog-navbar"
+          aria-controls="blog-navbar"
+          aria-expanded="false"
+          aria-label="Toggle Navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="blog-navbar"
+        >
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link text-light fs-1 text-center">
+                <strong>SUSTAINABLE DEVELOPMENT GOAL-16</strong>
+              </a>
+            </li>
+          </ul>
+          <form class="d-flex me-3" role="search">
+            <div class="input-group">
+              <input
+                type="search"
+                class="form-control"
+                placeholder="Search for.."
+              />
+              <button type="submit" class="btn btn-dark">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </form>
+          <a href="contact.html" class="nav-link text-light fs-5"
+            ><strong>CONTACT US</strong></a
+          >
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-5 pt-5">
+      <div class="col-md-8 mx-auto">
+        <div class="card shadow-sm mb-4 p-3">
+          <h3 class="text-center text-primary">
+            16.2 end abuse, exploitation, trafficking and all forms of violence
+            and torture against children
+            <img
+              src="data:image/png;base64,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"
+              alt=""
+            />
+          </h3>
+          <div class="card-body">
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="#"
+                  onclick="toggleInfo('indicator88')"
+                  class="btn btn-dark text-light w-100 text-start"
+                  style="border-radius: 5px; padding: 10px; margin-bottom: 5px"
+                >
+                  <strong>88.</strong>Violent injuries and deaths per 100,000
+                  population
+                </a>
+
+                <p id="indicator88" class="toggle-text">
+                  This statistic measures injuries and fatalities resulting
+                  directly from violence, including assaults (beatings, abuse,
+                  burnings) and armed violence but not accidents or
+                  self-inflicted injuries, expressed in terms of a unit per
+                  100,000 population. We include injuries, as there are many
+                  forms of violence that do not result in death.
+                </p>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  onclick="toggleInfo('indicator57')"
+                  class="btn btn-dark text-light w-100 text-start"
+                  style="border-radius: 5px; padding: 10px; margin-bottom: 5px"
+                >
+                  <strong>57.</strong> Ratification and implementation of
+                  fundamental ILO labor standards and compliance in law and
+                  practice
+                </a>
+
+                <p id="indicator57" class="toggle-text">
+                  The proposed indicator tracks countries’ ratification of and
+                  compliance with the 8 fundamental ILO conventions, which cover
+                  the following issues: freedom of association and the effective
+                  recognition of the right to collective bargaining; the
+                  elimination of all forms of forced or compulsory labor; the
+                  minimum age for labor and the immediate elimination of the
+                  worst forms of child labor; and the elimination of
+                  discrimination in respect of employment and occupation,
+                  including equal remuneration.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleInfo(id) {
+        var element = document.getElementById(id);
+        element.style.display =
+          element.style.display === "none" ? "block" : "none";
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - SDG Goal 16</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .custom-nav {
+        background-color: rgba(13, 0, 0, 0.9);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+      .card strong {
+        font-size: 1.2rem;
+      }
+      .card-body ul li {
+        margin-bottom: 15px;
+      }
+      .card-body ul li a {
+        transition: color 0.3s;
+      }
+      .card-body ul li a:hover {
+        color: #007bff;
+      }
+      .toggle-text {
+        display: none;
+        margin-top: 0.5rem;
+        transition: all 0.3s ease-in-out;
+      }
+      .footer {
+        background-color: #333c44;
+        color: white;
+        padding: 15px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg custom-nav">
+      <div class="container-fluid">
+        <a href="GOAL16.html" class="navbar-brand">
+          <img
+            src="logo.png"
+            alt=""
+            class="rounded"
+            style="width: 200px; height: 120px"
+          />
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler bg-light"
+          data-bs-toggle="collapse"
+          data-bs-target="#blog-navbar"
+          aria-controls="blog-navbar"
+          aria-expanded="false"
+          aria-label="Toggle Navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="blog-navbar"
+        >
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link text-light fs-1 text-center">
+                <strong>SUSTAINABLE DEVELOPMENT GOAL-16</strong>
+              </a>
+            </li>
+          </ul>
+          <form class="d-flex me-3" role="search">
+            <div class="input-group">
+              <input
+                type="search"
+                class="form-control"
+                placeholder="Search for.."
+              />
+              <button type="submit" class="btn btn-dark">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </form>
+          <a href="contact.html" class="nav-link text-light fs-5"
+            ><strong>CONTACT US</strong></a
+          >
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-5 pt-5">
+      <div class="col-md-8 mx-auto">
+        <div class="card shadow-sm mb-4 p-3">
+          <h3 class="text-center text-primary">
+            16.4 by 2030 significantly reduce illicit financial and arms flows,
+            strengthen recovery and return of stolen assets, and combat all
+            forms of organized crime
+            <img
+              src="data:image/png;base64,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"
+              alt=""
+            />
+          </h3>
+          <div class="card-body">
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="#"
+                  onclick="toggleInfo('indicator90')"
+                  class="btn btn-dark text-light w-100 text-start"
+                  style="border-radius: 5px; padding: 10px; margin-bottom: 5px"
+                >
+                  <strong>90.</strong>Proportion of legal persons and
+                  arrangements for which beneficial ownership information is
+                  publicly available
+                </a>
+
+                <p id="indicator90" class="toggle-text">
+                  There is no serious, legitimate reason for hiding the true
+                  ownership of companies, trusts, or similar legal structures
+                  from a country’s tax authorities. In many of the poorest
+                  countries, anonymous shell companies in offshore locations
+                  open the door to corruption and defrauding the public purse.
+                  Transparent beneficial company ownership is crucial to curb
+                  these illicit financial flows and capital flight that
+                  undermine sustainable development. Beneficial ownership should
+                  therefore be transparent and publicly available.
+                </p>
+                <img
+                  src="https://images.surferseo.art/6789f4cc-46c8-4f91-b88a-70f7789aec09.png"
+                  alt=""
+                  width="600"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function toggleInfo(id) {
+        var element = document.getElementById(id);
+        element.style.display =
+          element.style.display === "none" ? "block" : "none";
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
